@@ -45,8 +45,8 @@
   box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
 }
 .singlePlayerPopUpWrapper {
-  width: 99%;
-  height: 98vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
