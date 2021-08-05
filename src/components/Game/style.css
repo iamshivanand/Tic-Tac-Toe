@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.container {
+  width: 99%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.detailsContainer {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.playerName {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.score {
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5px;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+}
+.gameBoard {
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+}
+.settingButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 20px rgba(0, 0, 255, 0.4);
+}
+.board {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 0.01rem;
+  height: 330px;
+  width: 330px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.squares {
+  cursor: pointer;
+  height: 98%;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 5px rgba(135, 130, 130, 0.1);
+}
+.squares img {
+  max-height: 80%;
+  max-width: 80%;
+}
+.popUpWrapper {
+  width: 99%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.popUp {
+  height: 200px;
+  width: 300px;
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+  border-radius: 20px;
+  background-color: white;
+  color: red;
+}
+.restartbutton {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+}
+.X {
+  font-weight: bolder;
+  color: red;
+}
+.O {
+  font-weight: bolder;
+  color: rgb(13, 228, 240);
+}
+.alert {
+  background-color: red;
+}

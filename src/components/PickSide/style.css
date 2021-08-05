@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.container {
+  width: 100%;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.container h1 {
+  font-family: "Roboto", sans-serif;
+  
+}
+.selectImage {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radioButton label {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+input {
+  height: 30px;
+  width: 30px;
+}
+
+.selectImage img {
+  height: 150px;
+}
+.continueButton {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+}
+.buttonContainer {
+}

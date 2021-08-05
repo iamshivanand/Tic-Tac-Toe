@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.container {
+  width: 100%;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.imageContainer img {
+  height: 150px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+.AIbutton {
+  background-color: rgb(77, 77, 255);
+  box-shadow: 0px 0px 20px rgba(0, 0, 200, 0.8);
+  color: white;
+}
+.friendButton {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+}
+.singlePlayerPopUpWrapper {
+  width: 99%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.singlePlayerPopUp {
+  height: 300px;
+  width: 400px;
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+  border-radius: 20px;
+  background-color: white;
+  color: red;
+}
+.restartbutton {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(200, 200, 200, 1);
+}
+.inputField {
+  height: 60px;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputField input {
+  width: 96%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+input:focus {
+  outline: none;
+  font-size: large;
+  font-weight: 900;
+}
