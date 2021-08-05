@@ -50,7 +50,7 @@ function App() {
               setPlayer2Choice={setPlayer2Choice}
               setShowChooseMode={setShowChooseMode}
               setShowPickSide={setShowPickSide}
-              setSshowGame={setShowGame}
+              setShowGame={setShowGame}
             />
           )}
           {showGame && (
@@ -58,6 +58,8 @@ function App() {
               player1Choice={player1Choice}
               player2Choice={player2Choice}
               isSinglePlayer={isSinglePlayer}
+              setShowChooseMode={setShowChooseMode}
+              setShowGame={setShowGame}
             />
           )}
         </Grid>

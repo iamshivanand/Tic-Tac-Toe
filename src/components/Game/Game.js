@@ -31,7 +31,13 @@ const allvariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const Game = ({ player1Choice, player2Choice, isSinglePlayer }) => {
+const Game = ({
+  player1Choice,
+  player2Choice,
+  isSinglePlayer,
+  setShowChooseMode,
+  setShowGame,
+}) => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXisNext] = useState(true);
@@ -151,6 +157,10 @@ const Game = ({ player1Choice, player2Choice, isSinglePlayer }) => {
       setArr([0, 1, 2, 3, 4, 5, 6, 7, 8]);
     }
   };
+  const handleNewGameButton = () => {
+    setShowChooseMode(true);
+    setShowGame(false);
+  };
   //   console.log("Winner", winner);
 
   return (
@@ -212,6 +222,11 @@ const Game = ({ player1Choice, player2Choice, isSinglePlayer }) => {
         whileHover="hover"
       >
         <SettingsIcon />
+      </motion.div>
+      <motion.div variants={allvariants}>
+        <button className="NewGameButton" onClick={handleNewGameButton}>
+          New Game
+        </button>
       </motion.div>
     </motion.div>
   );

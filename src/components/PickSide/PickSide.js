@@ -40,7 +40,7 @@ const PickSide = ({
   player2Choice,
   player1Choice,
   setShowPickSide,
-  setSshowGame,
+  setShowGame,
   setShowChooseMode,
 }) => {
   const [value, setValue] = useState();
@@ -58,7 +58,7 @@ const PickSide = ({
   };
   const handleContinue = () => {
     setShowPickSide(false);
-    setSshowGame(true);
+    setShowGame(true);
   };
   const handleBackButton = () => {
     setShowChooseMode(true);
